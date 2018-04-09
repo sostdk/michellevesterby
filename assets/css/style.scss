@@ -2,6 +2,7 @@
 
 html,body { overflow-x:hidden;background-color:#231f20;}
 a { color:#fff;cursor:pointer; }
+img { width:100%;height:auto; }
 
 #slideonebtn, #slidetwobtn {
   position:absolute;
@@ -114,7 +115,7 @@ header {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../img/Michelle-Vesterby-Triathlet-01.jpg) no-repeat center center;
+    url(../img/Michelle-Vesterby-KeepSmiling-01.jpg) no-repeat center center;
   background-size: cover;
   height:85vh;width:100%;
   text-align: center;
@@ -137,7 +138,7 @@ header {
     position: absolute;
     left: 50%;
     bottom:10vh;
-    margin-left: -57.28px;
+    margin-left: -28.64px;
 
     .more-arrow {
       position: relative;
@@ -178,6 +179,24 @@ main {
     text-align: center;
     padding: 4vh;
     h2 { margin:0;padding:0;font-size: 1.5em;font-weight: 900;}
+  }
+
+  #justBelieve {
+    position:relative;
+    color:#fff;
+
+    #justBelieveContent {
+      position:relative;
+
+      img {
+        position:absolute;
+        width:40%;
+      }
+      p {
+        position:absolute;
+        width:40vw;
+      }
+    }
   }
 
 }
