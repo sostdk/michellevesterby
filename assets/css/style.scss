@@ -203,21 +203,29 @@ main {
     margin: 5vh 0;
     color:#fff;
 
+    h2 {
+      text-align: center;
+      font-weight: 900;
+      font-size:3em;
+      margin: 10vh 0 0 0;
+    }
+
     #justBelieveContent {
+      margin: 10vh;
       position:relative;
 
-      h5 {
-        margin: 10vh 0;
-      }
       img {
         position:absolute;
-        width:40%;
-        left:12%
+        width:50%;
+        left:8%
       }
       p {
         position:absolute;
-        width:40%;
-        right:12%;
+        width:45%;
+        right:8%;
+        top:-80px;
+        font-size: 1.3em;
+        line-height: 1.6em;
       }
     }
   }
