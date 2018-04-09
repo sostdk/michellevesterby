@@ -18,11 +18,11 @@ a { color:#fff;cursor:pointer; }
 
 #slideone, #slidetwo {
   position:absolute;
-  z-index:999999999999999999999;
+  z-index:999;
   top:0;
   margin:0;padding:40px;
   width:300px;
-  height:90vh;
+  height:89vh;
   max-height:100%;
   background-color:#dd0d8b;
   display: none;
@@ -104,6 +104,7 @@ a { color:#fff;cursor:pointer; }
   .space {
     margin: 5px 0;
   }
+  .info { color:#dcdde1; }
 }
 
 header {
@@ -113,7 +114,7 @@ header {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../img/et.jpg) no-repeat center center;
+    url(../img/Michelle-Vesterby-Triathlet-01.jpg) no-repeat center center;
   background-size: cover;
   height:85vh;width:100%;
   text-align: center;
@@ -121,7 +122,7 @@ header {
   .heroWrapper {
     font-weight: 900;
     color:#fff;
-    height:35vw;
+    height:90vh;
     width:100vw;
     display: table-cell;
     vertical-align: middle;
@@ -162,7 +163,10 @@ header {
 }
 
 main {
-min-height: 50vh;
+  position:relative;
+  z-index:9999;
+  min-height: 50vh;
+
   section {
     width:100vw;
     margin:0;padding:0;
