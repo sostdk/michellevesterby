@@ -4,7 +4,7 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
 
 <!--Let browser know website is optimized for mobile-->
@@ -15,7 +15,10 @@
 
 <body>
 
+<div class="navwrapper">
 <a href="#" id="slideonebtn">ABOUT KEEP SMILING LIFE</a>
+<a href="#" id="slidetwobtn"><div class="burger"></div></a>
+</div>
 <ul id="slideone">
   <a href="#" id="slideoneclose"><div class="close"></div></a>
 <h3>ABOUT KEEP SMILING LIFE</h3>
@@ -28,10 +31,10 @@ autemodi ut venis, corepudam rero cum hicae net...
   <a href="#">
     <div class="slidefooter row">
       <div class="col s10">
-        <div class="h5">
+        <h6>
           More about<br>
           <b>KEEP SMILING LIFE</b>
-        </div>
+        </h6>
       </div>
       <div class="col s2">
         <div class="more-arrow-right-wrapper"><div class="more-arrow-right"></div></div>
@@ -40,7 +43,6 @@ autemodi ut venis, corepudam rero cum hicae net...
   </a>
 </ul>
 
-<a href="#" id="slidetwobtn"><div class="burger"></div></a>
 <ul id="slidetwo">
   <a href="#" id="slidetwoclose"><div class="close"></div></a>
   <li><a href="#">Believe in it - just believe!</a></li>
@@ -100,12 +102,11 @@ If it had been about physiology, talent and structure alone I would never have c
 <!--JavaScript at end of body for optimized loading-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 
   $("#slideonebtn").click(function (e) { //Slide one toggle
-    e.preventDefault();
     if ($("#slidetwo").is(":visible")){
       $("#slidetwo").toggle("slide", { direction: "right" }, 200);
       $("#slideone").toggle("slide", { direction: "left" }, 200);
@@ -115,12 +116,10 @@ $(document).ready(function(){
   });
 
   $("#slideoneclose").click(function (e) { //Slide one toggle close
-    e.preventDefault();
     $("#slideone").toggle("slide", { direction: "left" }, 200);
   });
 
   $("#slidetwobtn").click(function (e) { //Slide two toggle
-    e.preventDefault();
     if ($("#slideone").is(":visible")){
       $("#slideone").toggle("slide", { direction: "left" }, 200);
       $("#slidetwo").toggle("slide", { direction: "right" }, 200);
@@ -130,12 +129,8 @@ $(document).ready(function(){
   });
 
   $("#slidetwoclose").click(function (e) { //Slide two toggle close
-    e.preventDefault();
     $("#slidetwo").toggle("slide", { direction: "right" }, 200);
   });
-
-
-
 
 });
 

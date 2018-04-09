@@ -4,6 +4,10 @@ html,body { overflow-x:hidden;background-color:#231f20;height:100%;}
 a { color:#fff;cursor:pointer; }
 img { width:100%;height:auto; }
 
+.navwrapper {
+  position:relative;
+}
+
 #slideonebtn, #slidetwobtn {
   position:absolute;
   cursor: pointer;
@@ -59,7 +63,7 @@ img { width:100%;height:auto; }
     }
   }
   .more-arrow-right-wrapper {
-    margin-top:45px;
+    margin-top:55px;
     transition: all .2s;
 
       .more-arrow-right {
@@ -179,7 +183,7 @@ header {
 main {
   position:relative;
   z-index:9999;
-  min-height: 50vh;
+  min-height: 250vh;
 
   section {
     width:100vw;
@@ -196,18 +200,24 @@ main {
 
   #justBelieve {
     position:relative;
+    margin: 5vh 0;
     color:#fff;
 
     #justBelieveContent {
       position:relative;
 
+      h5 {
+        margin: 10vh 0;
+      }
       img {
         position:absolute;
         width:40%;
+        left:12%
       }
       p {
         position:absolute;
-        width:40vw;
+        width:40%;
+        right:12%;
       }
     }
   }
