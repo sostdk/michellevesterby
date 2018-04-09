@@ -1,6 +1,6 @@
 @import "parts";
 
-html,body { overflow-x:hidden;background-color:#231f20;}
+html,body { overflow-x:hidden;background-color:#231f20;height:100%;}
 a { color:#fff;cursor:pointer; }
 img { width:100%;height:auto; }
 
@@ -138,7 +138,12 @@ header {
     position: absolute;
     left: 50%;
     bottom:10vh;
-    margin-left: -28.64px;
+    margin-left: -28.68px;
+    transition: all .2s;
+
+    &:hover {
+      bottom:9.8vh;
+    }
 
     .more-arrow {
       position: relative;
@@ -147,6 +152,12 @@ header {
       background: #fff;
       transform: rotate(45deg);
       transform-origin: 0% 0%;
+      animation: pulse 2s infinite;
+      border-radius: 12px;
+
+      &:hover {
+        animation: none;
+      }
     }
     .more-arrow:after {
       content: '';
@@ -158,6 +169,8 @@ header {
       background: #fff;
       transform: rotate(-90deg);
       transform-origin: 0% 100%;
+      animation: pulse 2s infinite;
+      border-radius: 12px;
     }
 
   }
