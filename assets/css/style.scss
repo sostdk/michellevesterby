@@ -1,8 +1,17 @@
 @import "parts";
 
-html,body { overflow-x:hidden;background-color:#231f20;height:100%;}
+html,body {
+  overflow-x:hidden;background-color:#231f20;height:100%;
+  font-family: 'Nanum Gothic', sans-serif;
+  letter-spacing: 1px;
+}
 a { color:#fff;cursor:pointer; }
 img { width:100%;height:auto; }
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+}
 
 .navwrapper {
   position:relative;
@@ -28,7 +37,6 @@ img { width:100%;height:auto; }
   margin:0;padding:40px;
   width:300px;
   height:89vh;
-  max-height:100%;
   background-color:#dd0d8b;
   display: none;
   color:#fff;
@@ -101,9 +109,10 @@ img { width:100%;height:auto; }
   li {
     margin: 5px 0;
     text-align: right;
-    line-height: 1em;
+    line-height: 1.2em;
     a {
-      font-size: 1.2em;
+      font-size: 1em;
+      font-weight: 600;
     }
   }
   .space {
@@ -132,8 +141,17 @@ header {
     display: table-cell;
     vertical-align: middle;
 
-    h1 { font-size:6em;font-weight: 900; }
-    h2 { font-size:1em;font-weight: 900; }
+    .herospan {
+      padding-left:5vw;
+    }
+    h1 { font-size:4.5em;font-weight:900;letter-spacing:30px;}
+    span {
+      font-size:1.4em;font-weight:900;color:#dd0d8b;
+    }
+    img {
+      width:100%;
+      height:auto;
+    }
   }
 
 .arrow-wrapper {
