@@ -183,7 +183,6 @@ header {
 main {
   position:relative;
   z-index:9999;
-  min-height: 250vh;
 
   section {
     width:100vw;
@@ -195,94 +194,22 @@ main {
     color:#fff;
     text-align: center;
     padding: 4vh;
-    h2 { margin:0;padding:0;font-size: 1.5em;font-weight: 900;}
+    h2 { margin:0;padding:0;font-size: 1.5em;font-weight: 900; }
   }
+
 
   #justBelieve {
-    position:relative;
-    margin: 5vh 0;
-    color:#fff;
-
     h2 {
-      text-align: center;
-      font-weight: 900;
-      font-size:3em;
-      margin: 10vh 0 0 0;
-    }
-
-    #justBelieveContent {
-      margin: 10vh;
-      position:relative;
-      min-height: 40vw;
-
-      @media screen and (max-width: 768px) {
-        margin:2%;
-      }
-
-
-      img {
-        position:absolute;
-        width:50%;
-        left:8%;
-
-        @media screen and (max-width: 1600px) {
-          width:80%;
-          left:-15%;
-        }
-        @media screen and (max-width: 1600px) {
-          width:100%;
-          left:-35%;
-        }
-        @media screen and (max-width: 768px) {
-          position:relative;
-          width:100%;
-          right:0;
-          left:0;
-        }
-      }
-      p {
-        position:absolute;
-        width:45%;
-        right:8%;
-        top:-80px;
-        font-size: 1.3em;
-        line-height: 1.6em;
-
-        @media screen and (max-width: 1600px) {
-          width:70%;
-          right:-15%;
-        }
-        @media screen and (max-width: 1600px) {
-          width:100%;
-          right:-30%;
-        }
-        @media screen and (max-width: 768px) {
-          position:relative;
-          width:100%;
-          top:0;
-          right:0;
-        }
-      }
-
-    }
-
-  }
-
-  #justBelievetwo {
-
-    h2 {
-      margin: 10vh 0;
+      margin: 10vh 0 10vh 0;
       text-align: center;
       font-weight: 900;
       color:#fff;
+      @media screen and (max-width: 1340px) {
+        margin: 10vh 0 8vh 0;
+      }
     }
 
-    #justBelieveContenttwo {
-      margin-top:10vh;
-
-      @media screen and (max-width: 990px) {
-          margin:0;
-      }
+    #justBelieveContent {
 
       img {
         width:140%;
@@ -291,12 +218,15 @@ main {
         }
       }
       p {
-        margin-top:-75px;
+        margin-top:-80px;
         color:#fff;
         font-size:1.8em;
         @media screen and (max-width: 1340px) {
             font-size: 1.4em;
-            margin:30px 0;
+            margin-top:-60px;
+        }
+        @media screen and (max-width: 990px) {
+            margin-top:30px;
         }
       }
 
@@ -306,10 +236,27 @@ main {
 
   #about {
 
+    padding: 10vh 0;
+
+    @media screen and (max-width: 600px) {
+        padding:0;
+    }
+
     p {
       color:#fff;
       font-size: 1.4em;
     }
+  }
+
+}
+
+footer {
+  padding:10vh 0;
+  color:#646e70;
+  font-size:1.6em;
+  text-align: center;
+  address {
+    font-style: normal;
   }
 
 }
