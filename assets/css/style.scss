@@ -213,12 +213,32 @@ main {
     #justBelieveContent {
       margin: 10vh;
       position:relative;
+      min-height: 40vw;
+
+      @media screen and (max-width: 768px) {
+        margin:2%;
+      }
+
 
       img {
         position:absolute;
         width:50%;
-        left:8%
+        left:8%;
 
+        @media screen and (max-width: 1600px) {
+          width:80%;
+          left:-15%;
+        }
+        @media screen and (max-width: 1600px) {
+          width:100%;
+          left:-35%;
+        }
+        @media screen and (max-width: 768px) {
+          position:relative;
+          width:100%;
+          right:0;
+          left:0;
+        }
       }
       p {
         position:absolute;
@@ -227,8 +247,68 @@ main {
         top:-80px;
         font-size: 1.3em;
         line-height: 1.6em;
+
+        @media screen and (max-width: 1600px) {
+          width:70%;
+          right:-15%;
+        }
+        @media screen and (max-width: 1600px) {
+          width:100%;
+          right:-30%;
+        }
+        @media screen and (max-width: 768px) {
+          position:relative;
+          width:100%;
+          top:0;
+          right:0;
+        }
       }
 
+    }
+
+  }
+
+  #justBelievetwo {
+
+    h2 {
+      margin: 10vh 0;
+      text-align: center;
+      font-weight: 900;
+      color:#fff;
+    }
+
+    #justBelieveContenttwo {
+      margin-top:10vh;
+
+      @media screen and (max-width: 990px) {
+          margin:0;
+      }
+
+      img {
+        width:140%;
+        @media screen and (max-width: 990px) {
+            width:100%;
+        }
+      }
+      p {
+        margin-top:-75px;
+        color:#fff;
+        font-size:1.8em;
+        @media screen and (max-width: 1340px) {
+            font-size: 1.4em;
+            margin:30px 0;
+        }
+      }
+
+    }
+
+  }
+
+  #about {
+
+    p {
+      color:#fff;
+      font-size: 1.4em;
     }
   }
 
