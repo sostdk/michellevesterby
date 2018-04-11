@@ -148,6 +148,10 @@ header {
         font-size:3.5em;
         letter-spacing:20px;
       }
+      @media screen and (max-width: 768px) {
+        font-size:3em;
+        letter-spacing:15px;
+      }
     }
     span {
       font-size:1.2em;font-weight:900;color:#dd0d8b;
