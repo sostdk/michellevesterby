@@ -12,6 +12,8 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 </head>
 
 <body class="insta">
@@ -90,13 +92,14 @@
 <script type="text/javascript">
     var userFeed = new Instafeed({
         get: 'user',
-        userId: '1926638130',
+        userId: '333386169',
         accessToken: '333386169.1677ed0.7d8c120afc7347b49e415d5ff9a3465e ',
-        template: '<div class="col s12 m4 l3"><a href="{{link}}"><img src="{{image}}" /></a></div>'
+        template: '<div class="col s12 m4 l3"><div class="instaItem"><a href="{{link}}"><ul class="interactions"><li><i class="far fa-heart"></i>&nbsp;{{likes}}</li></ul><img src="{{image}}" /></a></div></div>'
     });
     userFeed.run();
 </script>
 <script type="text/javascript">
+
 $(document).ready(function(){
 
   $('.scrollspy').scrollSpy();
