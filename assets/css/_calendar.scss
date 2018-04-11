@@ -1,0 +1,68 @@
+.calendar #slidetwo {
+  height: 60vh;
+  background:#231f20;
+}
+
+.calendar header {
+  background:transparent;
+  height:60vh;
+
+  .heroWrapper {
+    height:40vh;
+  }
+}
+
+.calendar main {
+  padding: 10vh 0;
+}
+
+
+.calendar .card-image {
+  width:200px;
+  background: url(../img/pinkbg.jpg);
+
+  .date {
+    position:absolute;
+    top:0;left:0;
+    font-size:2em;
+    color:#fff;
+
+    li {
+      width:200px;
+      text-align: center;
+
+      @media screen and (max-width:600px) {
+        width:100%;
+        margin-left:7vw;
+      }
+    }
+  }
+}
+
+.calendar .card-content {
+  p {
+    font-size:1.55em;
+    line-height: 1.5em;
+    margin-top:25px;
+
+    @media screen and (max-width:1140px) {
+      font-size:1.2em;
+      margin-top:35px;
+    }
+    @media screen and (max-width:768px) {
+      font-size:1.1em;
+      margin-top:35px;
+    }
+    @media screen and (max-width:600px) {
+      line-height:1.5em;
+      margin-top:10px;
+    }
+
+    a {
+      color:#dd0d8b;
+      text-decoration: underline;
+      font-size:.6em;
+      line-height: 1em;
+    }
+  }
+}

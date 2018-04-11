@@ -1,0 +1,22 @@
+body.insta {
+  background:#fff;
+}
+
+.insta #slidetwo {
+  height: 60vh;
+}
+
+.insta header {
+  background:#dd0d8b;
+  height:60vh;
+
+  .heroWrapper {
+    height:40vh;
+  }
+}
+
+.insta main {
+  padding: 10vh 0;
+}
+
+#instafeed > img {object-fit:contain;}

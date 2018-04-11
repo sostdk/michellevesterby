@@ -1,0 +1,285 @@
+.navwrapper {
+  position:relative;
+}
+
+#slideonebtn, #slidetwobtn {
+  position:absolute;
+  cursor: pointer;
+  z-index:99;
+  top:40px;
+}
+#slideonebtn {
+  left:40px;
+}
+#slidetwobtn {
+  right:40px;
+}
+
+#slideone, #slidetwo {
+  position:absolute;
+  z-index:999;
+  top:0;
+  margin:0;padding:40px;
+  width:300px;
+  height:89vh;
+  background:#dd0d8b;
+  display: none;
+  color:#fff;
+
+  @media screen and (max-width: 400px) {
+    padding:10px 40px 40px 40px;
+  }
+  p {
+    font-size: .9em,
+  }
+  a {
+    color:#fff;
+  }
+  .row, .col {
+    margin:0;padding:0;
+  }
+}
+#slideone {
+  left:0;
+  h3 { font-size: 1.2em;font-weight: 900;}
+
+  #slideoneclose {
+    position:absolute;
+    cursor: pointer;
+    top:50px;
+    right:-20px;
+  }
+  .slidefooter {
+    position:relative;
+    margin-top:5vh;
+
+    @media screen and (max-width: 400px) {
+      margin-top:10px;
+    }
+  }
+  a {
+    cursor: pointer;
+    &:hover .more-arrow-right-wrapper {
+      margin-left:5px;
+    }
+  }
+  .more-arrow-right-wrapper {
+    margin-top:55px;
+    transition: all .2s;
+
+    @media screen and (max-width: 400px) {
+      margin-top:50px;
+    }
+
+    .more-arrow-right {
+      position: relative;
+      width: 30px;
+      height: 2px;
+      background: #fff;
+      transform: rotate(-45deg);
+      transform-origin: 0% 0%;
+    }
+    .more-arrow-right:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 100%;
+      background: #fff;
+      transform: rotate(-90deg);
+      transform-origin: 0% 100%;
+    }
+  }
+
+}
+#slidetwo {
+  right:0;
+  padding: 50px;
+
+  #slidetwoclose {
+    position:absolute;
+    cursor: pointer;
+    top:50px;
+    left:-50px;
+  }
+  li {
+    margin: 5px 0;
+    text-align: right;
+    line-height: 1.2em;
+    a {
+      font-size: .9em;
+      font-weight: 600;
+    }
+  }
+  .space {
+    margin: 5px 0;
+  }
+  .info { color:#dcdde1; }
+}
+
+header {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../img/Michelle-Vesterby-KeepSmiling-01.jpg) no-repeat center center;
+  background-size: cover;
+  height:85vh;width:100%;
+  text-align: center;
+
+  .heroWrapper {
+    font-weight: 900;
+    color:#fff;
+    height:90vh;
+    width:100vw;
+    display: table-cell;
+    vertical-align: middle;
+
+    h1 {
+      font-size:4.2em;font-weight:900;letter-spacing:30px;
+      margin-left:30px;
+      @media screen and (max-width: 990px) {
+        font-size:3.5em;
+        letter-spacing:20px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size:3em;
+        letter-spacing:15px;
+      }
+    }
+    span {
+      font-size:1.2em;font-weight:900;color:#dd0d8b;
+    }
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
+
+.arrow-wrapper {
+    width: 57.28px;
+    height: 57.28px;
+    position: absolute;
+    left: 50%;
+    bottom:10vh;
+    margin-left: -28.68px;
+    transition: all .2s;
+
+    &:hover {
+      bottom:9.8vh;
+    }
+
+    .more-arrow {
+      position: relative;
+      width: 60px;
+      height: 2px;
+      background: #fff;
+      transform: rotate(45deg);
+      transform-origin: 0% 0%;
+      animation: pulse 2s infinite;
+      border-radius: 12px;
+
+      &:hover {
+        animation: none;
+      }
+    }
+    .more-arrow:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 100%;
+      background: #fff;
+      transform: rotate(-90deg);
+      transform-origin: 0% 100%;
+      animation: pulse 2s infinite;
+      border-radius: 12px;
+    }
+
+  }
+}
+
+main {
+  position:relative;
+  z-index:9999;
+
+  section {
+    width:100vw;
+    margin:0;padding:0;
+  }
+
+  #cta {
+    background-color:#dd0d8b;
+    color:#fff;
+    text-align: center;
+    padding: 4vh;
+    h2 { margin:0;padding:0;font-size: 1.5em;font-weight: 900; }
+  }
+
+
+  #justBelieve {
+    h2 {
+      margin: 10vh 0 10vh 0;
+      text-align: center;
+      font-weight: 900;
+      color:#fff;
+      @media screen and (max-width: 1340px) {
+        margin: 10vh 0 8vh 0;
+      }
+    }
+
+    #justBelieveContent {
+
+      img {
+        width:140%;
+        @media screen and (max-width: 990px) {
+            width:100%;
+        }
+      }
+      p {
+        margin-top:-80px;
+        color:#fff;
+        font-size:1.8em;
+        @media screen and (max-width: 1340px) {
+            font-size: 1.4em;
+            margin-top:-60px;
+        }
+        @media screen and (max-width: 990px) {
+            margin-top:30px;
+        }
+      }
+
+    }
+
+  }
+
+  #about {
+
+    padding: 10vh 0;
+
+    @media screen and (max-width: 600px) {
+        padding:0;
+    }
+
+    p {
+      color:#fff;
+      font-size: 1.4em;
+    }
+  }
+
+}
+
+footer {
+  padding:10vh 0;
+  color:#646e70;
+  font-size:1.6em;
+  text-align: center;
+  address {
+    font-style: normal;
+  }
+
+}

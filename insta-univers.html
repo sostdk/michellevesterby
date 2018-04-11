@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Nanum+Gothic|Oswald" rel="stylesheet">
+
+<!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body class="insta">
+
+<div class="navwrapper">
+
+<a href="#" id="slidetwobtn"><div class="burger"></div></a>
+<ul id="slidetwo">
+  <a href="#" id="slidetwoclose"><div class="close"></div></a>
+  <li><a href="#">Believe in it - just believe!</a></li>
+  <li><a href="#">My insta universe</a></li>
+  <li><a href="#">My calender</a></li>
+  <li><a href="#">My amazing sponsors</a></li>
+  <li class="space">&nbsp;</li>
+  <li class="space">&nbsp;</li>
+  <li><a href="http://keepsmiling.life/">JOIN</a></li>
+  <li><a href="http://keepsmiling.life/">KEEP SMILING LIFE</a></li>
+  <li class="space">&nbsp;</li>
+  <li><a href="http://keepsmiling.life/">JOIN</a></li>
+  <li><a href="http://keepsmiling.life/">KEEP SMILING RUN</a></li>
+  <li class="space">&nbsp;</li>
+  <li class="space">&nbsp;</li>
+  <li><a href="#" class="info">info@keepsmiling.life</a></li>
+  <li><a href="#" class="info">+45 60 19 46 78</a></li>
+</ul>
+
+</div>
+
+<header id="AboveTheFold">
+
+  <div class="heroWrapper">
+    <h1>MY INSTA UNIVERSE</h1>
+  </div>
+  <a href="#belowTheFold"><div class="arrow-wrapper"><div class="more-arrow"></div></div></a>
+
+</header>
+
+<main id="belowTheFold">
+
+    <section class="section scrollspy">
+      <div class="container">
+        <div class="row">
+          <div id="instafeed"></div>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <address>
+        <div class="col s12 m4">
+          MICHELLE VESTERBY
+        </div>
+        <div class="col s12 m4">
+          info@keepsmiling.life
+        </div>
+        <div class="col s12 m4">
+          +4560194678
+        </div>
+      </address>
+    </div>
+    <div class="row">
+      Copyright © 2008 Michelle Vesterby ApS. All rights reserved
+    </div>
+  </div>
+</footer>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="assets/js/instafeed.js"></script>
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '1926638130',
+        accessToken: '333386169.1677ed0.7d8c120afc7347b49e415d5ff9a3465e ',
+        template: '<div class="col s12 m4 l3"><a href="{{link}}"><img src="{{image}}" /></a></div>'
+    });
+    userFeed.run();
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('.scrollspy').scrollSpy();
+
+  $("#slideonebtn").click(function (e) { //Slide one toggle
+    if ($("#slidetwo").is(":visible")){
+      $("#slidetwo").toggle("slide", { direction: "right" }, 200);
+      $("#slideone").toggle("slide", { direction: "left" }, 200);
+    } else {
+      $("#slideone").toggle("slide", { direction: "left" }, 200);
+    }
+  });
+
+  $("#slideoneclose").click(function (e) { //Slide one toggle close
+    $("#slideone").toggle("slide", { direction: "left" }, 200);
+  });
+
+  $("#slidetwobtn").click(function (e) { //Slide two toggle
+    if ($("#slideone").is(":visible")){
+      $("#slideone").toggle("slide", { direction: "left" }, 200);
+      $("#slidetwo").toggle("slide", { direction: "right" }, 200);
+    } else {
+      $("#slidetwo").toggle("slide", { direction: "right" }, 200);
+    }
+  });
+
+  $("#slidetwoclose").click(function (e) { //Slide two toggle close
+    $("#slidetwo").toggle("slide", { direction: "right" }, 200);
+  });
+
+});
+
+</script>
+</body>
+</html>
