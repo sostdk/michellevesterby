@@ -168,6 +168,10 @@ header {
     margin-left: -28.68px;
     transition: all .2s;
 
+    @media screen and (max-width:400px) {
+      margin-left:-34px;
+    }
+
     &:hover {
       bottom:9.8vh;
     }
