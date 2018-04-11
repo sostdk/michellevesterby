@@ -21,12 +21,12 @@
 <a href="#" id="slideonebtn">ABOUT KEEP SMILING LIFE</a>
 <ul id="slideone">
   <a href="#" id="slideoneclose"><div class="close"></div></a>
-<h3>ABOUT KEEP SMILING LIFE</h3>
+<h3>The Keep Smiling Universe!</h3>
   <p>
-Ro experume nate audaerum vid quo et prem. Luptios nonsedit ped quo into odit dendit,
-nate debit veliquam fugias aut aut porecte exped et vent, etur, nimet, sum fugiaep
-tatiandam, corehendae paruptatin corepudam rero cum hicae net faccum veni susdam,
-autemodi ut venis, corepudam rero cum hicae net...
+KeepSmiling.life is a universe where you can seek knowledge and find inspiration regarding training, sports gear, nutrition and other relevant topics.
+It also takes you behind the scenes of my life as a pro triathlete and gives you an insight into different aspects of my everyday life - training, family and friends, planning etc.
+Even though triathlon is an individual sport, it’s important to have a community where you can share stuff, ask questions, exchange experiences and discuss matters with like-minded people.
+<b>That’s what the Keep Smiling Community is all about!</b>
   </p>
   <a href="#">
     <div class="slidefooter row">
@@ -72,12 +72,12 @@ autemodi ut venis, corepudam rero cum hicae net...
 
     <div class="container">
       <div class="row">
-        <div class="col s12 m10 l8 offset-l2"><img src="assets/img/logo/KeepSmilingLife-Hero.png"></div>
+        <div class="col s12 m10 l8 offset-l2"><img src="assets/img/logo/KeepSmilingLife-Hero.png" alt="Michelle Vesterby Keep Smiling"></div>
       </div>
     </div>
 
   </div>
-  <a href="#"><div class="arrow-wrapper"><div class="more-arrow"></div></div></a>
+  <a href="#justBelieve"><div class="arrow-wrapper"><div class="more-arrow"></div></div></a>
 </header>
 
 <main id="belowTheFold">
@@ -86,14 +86,14 @@ autemodi ut venis, corepudam rero cum hicae net...
       <h2>JOIN KEEP SMILING LIFE</h2>
     </section>
 
-    <section id="justBelieve">
+    <section id="justBelieve" class="section scrollspy">
       <div class="container">
         <div class="row">
           <h2>BELIEVE IN IT - JUST BELIEVE!</h2>
         </div>
         <div class="row" id="justBelieveContent">
             <div class="col s12 m12 l6">
-              <img src="assets/img/Michelle-Vesterby-KeepSmiling-02.jpg">
+              <img src="assets/img/Michelle-Vesterby-KeepSmiling-02.jpg" alt="Michelle Vesterby Keep Smiling">
             </div>
             <div class="col s12 m12 l6">
               <p>
@@ -156,6 +156,8 @@ It's not without good reason that it's called an extreme sport.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+
+  $('.scrollspy').scrollSpy();
 
   $("#slideonebtn").click(function (e) { //Slide one toggle
     if ($("#slidetwo").is(":visible")){
